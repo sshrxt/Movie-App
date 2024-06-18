@@ -95,3 +95,51 @@ button {
 }
 
 /*----------------------------------------- main container -----------------------------*/
+.main-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+    margin: auto;
+}
+
+.card {
+    min-height: 450px;
+    align-items: center;
+    border: 2px solid #27272a;;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#card {
+    min-height: 450px;
+    align-items: center;
+    border: 2px solid #27272a;;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.movie-info > h1{
+   font-size: 3rem;
+   margin-left: 10px;
+   text-wrap: wrap;
+}
+
+.img {
+    border-radius: 5px;
+    object-fit: cover;
+    min-width: 50%;
+    min-height: 370px;
+    border: 1px solid #27272a;;
+    border-radius: 10px;
+    background-position: 50%;
+    background-size: cover;
+    margin-left: 20px;
+}
