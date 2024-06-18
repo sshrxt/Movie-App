@@ -1,7 +1,8 @@
-import { topMovies } from "./modules/topmovies.js";
-
-const btn = document.querySelector("#top");
-console.log('hey');
-btn.addEventListener('click', ()=>{
-    document.querySelector("body").appendChild(topMovies());
+fetch('http://localhost:8000/api/popular')
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+})
+.catch(error => {
+    console.error(error);
 });

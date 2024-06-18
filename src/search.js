@@ -1,3 +1,8 @@
+import path from 'path';
+const router = express.Router();
+
+
+
 const fetch = require('node-fetch');
 
 const url = 'https://api.themoviedb.org/3/search/movie?query=dune&include_adult=false&language=en-US&page=1';
