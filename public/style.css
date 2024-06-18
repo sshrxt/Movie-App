@@ -78,7 +78,7 @@ body {
 #search-input {
     width: 1200px;
     height: 60px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     border-radius: 20px;
     align-items: center;
 }
@@ -108,11 +108,13 @@ button {
     min-height: 450px;
     align-items: center;
     border: 2px solid #27272a;;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    background-color: rgb(52, 53, 54);
+    color: white;
 }
 
 #card {
@@ -130,6 +132,7 @@ button {
    font-size: 3rem;
    margin-left: 10px;
    text-wrap: wrap;
+   margin-right: 5px;
 }
 
 .img {
