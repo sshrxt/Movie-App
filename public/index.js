@@ -1,8 +1,8 @@
-fetch('http://localhost:8000/api/popular')
-.then(response => response.json())
-.then(data => {
-    console.log(data);
-})
-.catch(error => {
-    console.error(error);
+import { topMovies } from "./modules/top-movies/topmovies.js";
+
+const btn = document.querySelector('#top');
+
+btn.addEventListener('click', async ()=> {
+    const topMoviesDiv = await topMovies();
+    document.querySelector("body").appendChild(topMoviesDiv);
 });
